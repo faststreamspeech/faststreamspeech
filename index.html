@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>streaming fastspeech</title>
+
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+</head>
+
+<body id="top">
+  <header>
+    <h2 style"text-align: justify">
+      <span class="latex">How to make system response in milliseconds with any sentence-length:</span>
+      <br />
+      <span class="latex">Non-autoregressive half-streaming TTS model for limitedresource devices</span>
+    </h2>
+    <p class="author">
+      Van-Thinh NGUYEN, Hung-Cuong PHAM, Dang-Khoa MAC
+    </p>
+  </header>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+  </div>
+  <p>
+    <span class="latex">
+      One of the most challenging problems of modern speech synthesis or text-to-speech is how to reduce the system latency, while keeping the naturalness of speech output. This paper deal with this problem, but particularly aim to apply on low-computing-resource devices. An end-to-end text-to-speech architecture was proposed, combining advantages of two the advance approaches in neural TTS models: (1) the fast inference and robustness of non-autoregressive approach and (2) the low and sentence-length independent latency of streaming mechanism. A specific masking method for training phase was also proposed, allow the streaming model can generate natural output speech without information context of whole input sequence. This model then was deployed and well evaluated on different platforms. Experimental result shows that, comparing to the baseline non-streaming model, the proposed system can produce speech output 5x faster on single CPU thread and 10x faster on low-end mobile phone, while remain comparable speech output quality.
+    </span>
+  </p>
+
+</body>
+
+</html>
