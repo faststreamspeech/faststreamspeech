@@ -47,18 +47,35 @@
 <body id="top" class="libertinus">
   <header role="banner">
     <h2 style="text-align: center;">
-      How to make TTS system respond in milliseconds with any sentence length:
-      <br>
-      Non-autoregressive half-streaming model for low-resource devices
+            HOW TO PUSH THE FASTEST MODEL 50X FASTER:
+            <br>
+            STREAMING NON-AUTOREGRESSIVE SPEECH SYNTHESIS ON
+            <br>
+            RESOUCE-LIMITED DEVICES
     </h2>
   </header>
   <p>
-    <span style="font-weight: bold;">Abstract:</span> This paper deals with the problem of reducing the latency of the high-quality text-to-speech systems, when deploying on low-computing-resource devices.
-    The FastStreamSpeech model was proposed, which combines the advantages of two recent advanced approaches in neural TTS: (1) the fast inference and robustness
-    from the non-autoregressive approach and (2) the low and sentence-length independent latency from the streaming mechanism.
-    A specific attention masking mechanism was proposed, allowing the streaming model can generate natural output, meanwhile it can only access a small part of the input sequence.
-    This proposed model then was deployed and well evaluated on different platforms. Experimental result shows that: compared to the baseline non-streaming model,
-    the proposed system can greatly speed up the system latency, while remain comparable speech output quality.
+    <span style="font-weight: bold;">Abstract</span> 
+    In voice-based human-machine interaction applications, the
+    synthesis speech module's response time or system latency is
+    one of the most critical factors affecting the user experience.
+    Minimizing the latency of the high-quality text-to-speech
+    system on end-user resource-limited devices is an important
+    task. In this paper, the FastStreamSpeech model is proposed
+    combining the advantages of the advanced approaches in
+    neural-based speech synthesis. The proposed method
+    includes (1) a specific streaming inference architecture for the
+    non-autoregressive acoustic and vocoder models and (2) an
+    attention masking mechanism in the training phase. The
+    experimental evaluations of the proposed model budget
+    mobile CPU show that this model can significantly reduce the
+    system latency by 5 to 50 times compared with the original
+    model while maintaining the high quality of output speech.
+  </p>
+  <p>
+    <span style="font-weight: bold;">Index Terms</span> — high-quality text-to-speech, streaming
+    inference, non-autoregressive model, resource-limited
+    devices, Vietnamese speech synthesis.
   </p>
   <main>
     <article>
@@ -73,9 +90,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center">FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
@@ -96,9 +113,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center"> FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
@@ -119,9 +136,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center"> FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
@@ -142,9 +159,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center"> FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
@@ -165,9 +182,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center"> FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
@@ -190,9 +207,9 @@
           <thead>
             <tr>
               <th style="text-align: center">Ground Truth</th>
-              <th style="text-align: center">Baseline (no streaming)</th>
-              <th style="text-align: center">Vocoder streaming only</th>
-              <th style="text-align: center">Decoder-Vocoder streaming</th>
+              <th style="text-align: center">Fastspeech2 + MultiBand-MelGAN (no streaming)</th>
+              <th style="text-align: center">Non-streaming Fastspeech 2 + Streaming MultiBand-MelGAN</th>
+              <th style="text-align: center"> FastStreamSpeech</th>
             </tr>
           </thead>
           <tbody>
